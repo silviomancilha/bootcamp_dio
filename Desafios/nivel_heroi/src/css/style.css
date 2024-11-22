@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Spice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-image: url("../img/view-illuminated-neon-gaming-keyboard-setup-controller.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titulo {
+  font-family: "Bungee Spice", cursive;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-shadow: #fc0 1px 0 10px;
+  animation: neon 2s alternate infinite ease-in-out;
+  --cor-neon: #ffd700;
+}
+
+#formulario {
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+input {
+  border: 2px solid #fc0;
+  text-align: center;
+  font-size: medium;
+  border-radius: 10px;
+  height: 30px;
+  border-style: inset;
+}
+
+#send {
+  background-color: goldenrod;
+  color: rgb(71, 1, 1);
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+#send:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.texto {
+  font-family: "Bungee Spice", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border: 5px solid #fc0;
+  border-radius: 10px;
+  width: 800px;
+  margin: 50px;
+}
+
+button {
+  background: goldenrod;
+  color: rgb(71, 1, 1);
+  font-weight: bold;
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  border-bottom: none;
+  border-style: outset;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 40px var(--cor-neon));
+  }
+}
+
+.mensagem {
+  font-family: "Acme", sans-serif;
+  text-shadow: #fc0 1px 0 10px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: goldenrod;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  font-size: 25px;
+  text-transform: uppercase;
+  animation: neon 2s alternate infinite ease-in-out;
+  --cor-neon: red;
+}

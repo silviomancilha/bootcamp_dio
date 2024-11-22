@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nivel Heroi</title>
+    <script src="../nivel_heroi/src/js/index.js" defer></script>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <h1 class="titulo">Classificador do Nível de Herói</h1>
+    <div id="formulario">
+      <form>
+        <label for="nome" class="texto">Nome do Heroi</label><br />
+        <input
+          type="text"
+          name="nome"
+          id="name"
+          placeholder="Digite o Nome do Herói"
+        /><br />
+
+        <!-- <p>Heroi : <span id="heroi"></span></p> -->
+
+        <label for="xp" class="texto">XP do Heroi</label><br />
+        <input
+          type="text"
+          name="xp"
+          id="xp_nivel"
+          placeholder="Digite o XP de seu Herói"
+        /><br />
+        <!-- <p>Nivel XP : <span id="xp"></span></p> -->
+
+        <input type="submit" value="Enviar" id="send" />
+
+        <div class="reset">
+          <button type="reset">Limpar dados</button>
+        </div>
+      </form>
+      <div class="mensagem"><p id="nivel"></p></div>
+    </div>
+  </body>
+</html>
